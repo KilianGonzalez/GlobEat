@@ -1,0 +1,25 @@
+{
+  "name": "globeat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KilianGonzalez/GlobEat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KilianGonzalez/GlobEat/issues"
+  },
+  "homepage": "https://github.com/KilianGonzalez/GlobEat#readme",
+  "dependencies": {
+    "three": "^0.180.0"
+  }
+}
