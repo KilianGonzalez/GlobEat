@@ -1,0 +1,25 @@
+#containerregistre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ECE6DE;
+    justify-content: center;
+    align-items: center;
+}
+#registre {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: #D7C2AE;
+}
+#d3registre {
+    width: 70%;
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
