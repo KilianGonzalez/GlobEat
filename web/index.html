@@ -1,36 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>GlobEat · Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleIndex.css">
 </head>
 <body>
-    <div id="menu">
-        <a href="index.html">Inici</a>
-        <a href="carta.html">Carta</a>
-        <a href="logIn.html">LogIn</a>
-        <a href="registre.html">Registre</a>
-    </div><br>
-    
-    <div id="container">
+    <header id="menu" class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img src="../blender/texturas/logo.png" alt="Logo de GlobEat">
+                <span>GlobEat</span>
+            </a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html" class="is-active">Inicio</a>
+                <a href="carta.html">Carta</a>
+                <a href="logIn.html">Login</a>
+            </nav>
+            <button class="search-button" type="button" aria-label="Abrir buscador">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 20.5 21.5 19l-4-4zM10.5 15a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-    </div><br>
-    
-    <div id="container1">
-        
-    </div><br>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-text">
+                <h1 id="hero-title">¡DISFRUTA DEL MEJOR BRUNCH!</h1>
+                <p class="hero-subtitle">Sabores artesanales para comenzar el día con energía.</p>
+                <button class="cta-button" type="button">DESCUBRE NUESTROS MENÚS</button>
+            </div>
+            <div class="hero-visual">
+                <div id="hero-canvas" aria-hidden="true"></div>
+                <img class="hero-stamp" src="../blender/texturas/logo.png" alt="Sello GlobEat">
+            </div>
+        </section>
 
-    <div id="container2">
-        
-    </div><br>
+        <section class="feature-row">
+            <div class="feature-media">
+                <img src="https://images.unsplash.com/photo-1542365887-1f1a016dae26?auto=format&fit=crop&w=900&q=80" alt="Desayuno con tortitas, zumo de naranja y bacon">
+            </div>
+            <div class="feature-copy feature-copy--terracotta">
+                <h2>Eleva tu brunch a otro nivel.</h2>
+                <p>¿Nuestro secreto? Trabajar con productos de verdad, sin procesar y sin conservantes.</p>
+            </div>
+        </section>
 
-    <div id="container3">
-        
-    </div><br>
+        <section class="feature-row feature-row--reverse">
+            <div class="feature-media">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Mesa con bollería, café y zumos en una terraza">
+            </div>
+            <div class="feature-copy feature-copy--sage">
+                <h2>Prueba diferentes gustos del mundo.</h2>
+                <p>Experimenta un viaje alrededor del mundo a través de su gastronomía.</p>
+            </div>
+        </section>
 
-    <footer id="footer"></footer>
+        <section class="feature-row">
+            <div class="feature-media">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80" alt="Churros y embutidos sobre una mesa de brunch">
+            </div>
+            <div class="feature-copy feature-copy--olive">
+                <h2>Disfruta de nuestra gastronomía.</h2>
+                <p>Experimenta un viaje alrededor del mundo a través de su gastronomía.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>SOBRE GlobEat</h3>
+                <p>Experiencias gastronómicas de diferentes países.</p>
+            </div>
+            <div>
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li>GlobEat</li>
+                    <li>GlobEat</li>
+                    <li>GlobEat</li>
+                </ul>
+            </div>
+            <div>
+                <h3>APARTADOS</h3>
+                <ul>
+                    <li>GlobEat</li>
+                    <li>Carta</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <div>
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li>666 66 66 66</li>
+                    <li>globeats@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
