@@ -7,8 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleIndex.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/examples/jsm/loaders/GLTFLoader": "https://unpkg.com/three@0.158.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+    <script type="module" src="./main.js"></script>
 </head>
 <body>
     <header id="menu" class="site-header">
@@ -17,16 +26,14 @@
                 <img src="../blender/texturas/logo.png" alt="Logo de GlobEat">
                 <span>GlobEat</span>
             </a>
-            <nav class="main-nav" aria-label="Navegación principal">
+            <nav class="main-nav main-nav--center" aria-label="Navegación principal">
                 <a href="index.html" class="is-active">Inicio</a>
                 <a href="carta.html">Carta</a>
-                <a href="logIn.html">Login</a>
             </nav>
-            <button class="search-button" type="button" aria-label="Abrir buscador">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 20.5 21.5 19l-4-4zM10.5 15a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"></path>
-                </svg>
-            </button>
+            <nav class="main-nav main-nav--right" aria-label="Acceso de usuarios">
+                <a href="logIn.html">Login</a>
+                <a href="registre.html">Registro</a>
+            </nav>
         </div>
     </header>
 
