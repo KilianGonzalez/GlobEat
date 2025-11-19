@@ -1,26 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="stylecarta.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
     </head>
     <body>
-        <div id="menu">
-            <a href="index.html">Inici</a>
-            <a href="carta.html">Carta</a>
-            <a href="logIn.html">LogIn</a>
-            <a href="registre.html">Registre</a>
-        </div><br><br>
-        <br><h2 id="lletra" class="titolCarta">AMERICA</h2><br>
-        <div id="america"></div>
-        <h2 id="lletra" class="titolCarta">FRANCIA</h2><br>
-        <div id="francia"></div>
-        <h2 id="lletra" class="titolCarta">ESPAÑA</h2><br>
-        <div id="espana"></div>
-        <br><div id="prodInd"></div><br>
+        <header id="menu" class="site-header">
+            <div class="logo">
+                <span class="logo-mark">GE</span>
+                <div class="logo-text">
+                    <span class="logo-title">GlobEat</span>
+                    <span class="logo-subtitle">Sabores del mundo</span>
+                </div>
+            </div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="carta.html" aria-current="page">Carta</a>
+                <a href="logIn.html">Login</a>
+            </nav>
+            <a class="login-link" href="registre.html">Registre</a>
+            <button class="search-button" type="button" aria-label="Buscar">
+                <span aria-hidden="true">&#128269;</span>
+            </button>
+        </header>
+
+        <main class="menu-page">
+            <section class="experience" data-theme="american">
+                <div class="section-heading">
+                    <span class="section-icon" aria-hidden="true">🥞</span>
+                    <h2>Experiencia Americana</h2>
+                    <span class="section-icon" aria-hidden="true">🥞</span>
+                </div>
+                <div class="menu-band">
+                    <div class="menu-cards">
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/smoothie.glb" alt="Bebida americana" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu1</h3>
+                            <p>Huevos + tortitas + bacon + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>18&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/tostada.glb" alt="Bagel gourmet" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu2</h3>
+                            <p>Huevos + salchichas + bacon + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>21&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/huevofrito.glb" alt="Huevos benedictinos" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu3</h3>
+                            <p>Tortitas + fruta + smoothie/zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>24&nbsp;€</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience" data-theme="spanish">
+                <div class="section-heading">
+                    <span class="section-icon" aria-hidden="true">🫒</span>
+                    <h2>Experiencia Española</h2>
+                    <span class="section-icon" aria-hidden="true">🫒</span>
+                </div>
+                <div class="menu-band">
+                    <div class="menu-cards">
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/basoZumo.glb" alt="Gazpacho andaluz" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu1</h3>
+                            <p>Churros/porras + chocolate + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>14&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/plato.glb" alt="Paella de mariscos" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu2</h3>
+                            <p>Pa amb tomàquet + jamon iberico + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>27&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/salchicha.glb" alt="Rabo de toro" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu3</h3>
+                            <p>Pa amb tomàquet + tortilla de patata + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>25&nbsp;€</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience" data-theme="french">
+                <div class="section-heading">
+                    <span class="section-icon" aria-hidden="true">🗼</span>
+                    <h2>Experiencia Francesa</h2>
+                    <span class="section-icon" aria-hidden="true">🗼</span>
+                </div>
+                <div class="menu-band">
+                    <div class="menu-cards">
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/crepe.glb" alt="Soufflé francés" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu1</h3>
+                            <p>Tostada francesa + fruta + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>19&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/cruassan.glb" alt="Magret de canard" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu2</h3>
+                            <p>Cruasán + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>32&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="menu-card">
+                            <div class="model-frame">
+                                <model-viewer src="../blender/tazaCafe.glb" alt="Tarte tatin" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>menu3</h3>
+                            <p>Crepe dulce + zumo/cafe</p>
+                            <div class="menu-meta">
+                                <span>Precio</span>
+                                <span>16&nbsp;€</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="variety">
+                <h2>Gastronomía Variada</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/tazaChocolate.glb" alt="Producto dulce" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/logo.glb" alt="Producto insignia" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/plato.glb" alt="Producto destacado" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/salchicha.glb" alt="Producto regional" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/smoothie.glb" alt="Producto refrescante" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/tostada.glb" alt="Producto crujiente" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/huevofrito.glb" alt="Producto tradicional" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="model-frame model-frame--compact">
+                            <model-viewer src="../blender/basoZumo.glb" alt="Producto fresco" camera-controls disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        </div>
+                        <h3>producto</h3>
+                        <p>Sabores del mercado local.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="page-footer"></footer>
     </body>
-    <footer id="footer"></footer>
 </html>
