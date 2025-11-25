@@ -23,19 +23,6 @@ body {
     line-height: 1.6;
 }
 
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    background-color: var(--header);
-    padding: 0.75rem clamp(1rem, 4vw, 3rem);
-    border-bottom: 1px solid rgba(47, 42, 37, 0.08);
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -69,14 +56,6 @@ body {
     text-transform: uppercase;
     color: var(--muted);
     letter-spacing: 0.18em;
-}
-
-.main-nav {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 .main-nav a,
@@ -259,10 +238,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    .site-header {
-        flex-wrap: wrap;
-    }
-
     .login-link {
         order: 3;
     }

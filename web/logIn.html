@@ -3,17 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LogIn</title>
+        <title>GlobEat · LogIn</title>
+        <link rel="icon" type="image/png" href="../blender/texturas/logo.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="styleLogIn.css">
+        <script defer src="login.js"></script>
     </head>
     <body>
         <div id="containerlogin">
-            <div id="logIn">
-                <a href="index.html">Inicia Sessio</a>
-            </div>
-            <div id="d3logIn"></div>
+            <section id="logIn" aria-labelledby="login-title">
+                <div class="login-logo">
+                    <img src="../blender/texturas/logo.png" alt="Logo de GlobEat">
+                </div>
+                <h1 id="login-title">Login</h1>
+                <button type="button" class="login-google" id="login-google-btn">Inicia sesión con Google</button>
+                <form id="login-form" novalidate>
+                    <label class="field-label" for="login-email">Usuario o correo electrónico</label>
+                    <input id="login-email" name="email" type="email" class="field-input" autocomplete="email" required>
+                    <label class="field-label" for="login-password">Contraseña</label>
+                    <input id="login-password" name="password" type="password" class="field-input" autocomplete="current-password" required>
+                    <button type="submit" class="login-submit">Iniciar Sesión</button>
+                </form>
+                <p class="login-message" id="login-message" aria-live="polite"></p>
+                <p class="login-register">¿No tienes cuenta? <a href="registre.html">Regístrate</a></p>
+            </section>
+            <section id="d3logIn" aria-label="Vista 3D de GlobEat">
+                <div id="login-3d-canvas"></div>
+            </section>
         </div>
-        
     </body>
 </html>

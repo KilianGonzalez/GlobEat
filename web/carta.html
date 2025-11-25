@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carta</title>
+        <title>GlobEat · Carta</title>
+        <link rel="icon" type="image/png" href="../blender/texturas/logo.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -13,22 +14,20 @@
     </head>
     <body>
         <header id="menu" class="site-header">
-            <div class="logo">
-                <span class="logo-mark">GE</span>
-                <div class="logo-text">
-                    <span class="logo-title">GlobEat</span>
-                    <span class="logo-subtitle">Sabores del mundo</span>
-                </div>
+            <div class="header-inner">
+                <a class="brand" href="index.html">
+                    <img src="../blender/texturas/logo.png" alt="Logo de GlobEat">
+                    <span>GlobEat</span>
+                </a>
+                <nav class="main-nav main-nav--center" aria-label="Navegación principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="carta.html" class="is-active">Carta</a>
+                </nav>
+                <nav class="main-nav main-nav--right" aria-label="Acceso de usuarios">
+                    <a href="logIn.html">Login</a>
+                    <a href="registre.html">Registro</a>
+                </nav>
             </div>
-            <nav class="main-nav" aria-label="Navegación principal">
-                <a href="index.html">Inicio</a>
-                <a href="carta.html" aria-current="page">Carta</a>
-                <a href="logIn.html">Login</a>
-            </nav>
-            <a class="login-link" href="registre.html">Registre</a>
-            <button class="search-button" type="button" aria-label="Buscar">
-                <span aria-hidden="true">&#128269;</span>
-            </button>
         </header>
 
         <main class="menu-page">
