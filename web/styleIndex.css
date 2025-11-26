@@ -117,6 +117,29 @@
     color: rgba(255, 255, 255, 0.85);
 }
 
+.cta-button {
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: linear-gradient(135deg, var(--color-terracotta), #e08a5a);
+    color: #fff;
+    padding: 16px 40px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(200, 117, 69, 0.35);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    overflow: hidden;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(200, 117, 69, 0.4);
+}
+
 @media (max-width: 960px) {
     .hero {
         grid-template-columns: 1fr;
