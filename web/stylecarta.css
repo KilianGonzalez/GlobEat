@@ -14,11 +14,12 @@
     --accent-french: #b19278;
     --card-bg: #f9f3ed;
     --product-border: #ddcbb6;
+    --color-sand: #f3e6d7;
 }
 
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg);
+    background-color: var(--color-sand);
     color: var(--text-main);
     line-height: 1.6;
 }

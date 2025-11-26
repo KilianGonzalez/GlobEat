@@ -130,31 +130,13 @@ img {
 
 main {
     display: grid;
-    gap: 24px;
+    gap: 40px;
     width: 100%;
-    padding: 96px 0 120px;
+    padding: 0 0 90px;
 }
 
 main > section {
     width: 100%;
-}
-
-.cta-button {
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background-color: var(--color-terracotta);
-    color: #fff;
-    padding: 14px 32px;
-    font-weight: 600;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(200, 117, 69, 0.24);
 }
 
 .site-footer {
@@ -187,12 +169,38 @@ main > section {
     gap: 6px;
 }
 
+.footer-grid ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.footer-grid ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.footer-grid ul li a:hover::after,
+.footer-grid ul li a:focus-visible::after {
+    transform: scaleX(1);
+}
+
 @media (max-width: 768px) {
     .header-inner {
         padding: 0 20px;
     }
 
     main {
-        padding: 96px 20px 100px;
+        padding: 0 20px 80px;
     }
 }
