@@ -11,8 +11,9 @@ const MODEL_PATHS = [
 
 const INSTANCE_COUNT = 14;
 
-function createCascadeForCanvas(canvasId) {
-    const container = document.getElementById(canvasId);
+function createCascadeForCanvas(containerId) {
+
+    const container = document.getElementById(containerId);
     if (!container) return;
 
     const { width, height } = container.getBoundingClientRect();
@@ -26,12 +27,8 @@ function createCascadeForCanvas(canvasId) {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(width, height);
 
-    const bgSource = getComputedStyle(container.parentElement || container).backgroundColor;
-    try {
-        renderer.setClearColor(new THREE.Color(bgSource), 1);
-    } catch (e) {
-        renderer.setClearColor(0xECE6DE, 1);
-    }
+    // Color de fondo fijo al color base de la página (#ECE6DE)
+    renderer.setClearColor(0xECE6DE, 1);
 
     container.innerHTML = '';
     container.appendChild(renderer.domElement);
@@ -137,6 +134,6 @@ function createCascadeForCanvas(canvasId) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    createCascadeForCanvas('login-3d-canvas');
-    createCascadeForCanvas('register-3d-canvas');
+    createCascadeForCanvas('d3logIn');
+    createCascadeForCanvas('d3registre');
 });
