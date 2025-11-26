@@ -3,17 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registre</title>
+        <title>GlobEat · Registro</title>
+        <link rel="icon" type="image/png" href="../blender/texturas/logo.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleLogIn.css">
         <link rel="stylesheet" href="styleRegistre.css">
+        <script defer src="register.js"></script>
     </head>
     <body>
         <div id="containerregistre">
-            <div id="registre">
-                <a href="index.html">Registra't</a>
-            </div>
-            <div id="d3registre"></div>
+            <section id="registre" aria-labelledby="register-title">
+                <div class="login-logo">
+                    <img src="../blender/texturas/logo.png" alt="Logo de GlobEat">
+                </div>
+                <h1 id="register-title">¡Únete a GlobEat!</h1>
+                <button type="button" class="login-google" id="register-google-btn">Regístrate con Google</button>
+                <form id="register-form" novalidate>
+                    <label class="field-label" for="register-email">Correo electrónico</label>
+                    <input id="register-email" name="email" type="email" class="field-input" autocomplete="email" required>
+                    <label class="field-label" for="register-username">Usuario</label>
+                    <input id="register-username" name="username" type="text" class="field-input" autocomplete="username" required>
+                    <label class="field-label" for="register-password">Contraseña</label>
+                    <input id="register-password" name="password" type="password" class="field-input" autocomplete="new-password" required>
+                    <label class="field-label" for="register-password-confirm">Confirmar contraseña</label>
+                    <input id="register-password-confirm" name="password-confirm" type="password" class="field-input" autocomplete="new-password" required>
+                    <label class="terms-label">
+                        <input id="register-terms" type="checkbox">
+                        <span>Acepto los Términos y Condiciones</span>
+                    </label>
+                    <button type="submit" class="login-submit">Registrarse</button>
+                </form>
+                <p class="login-message" id="register-message" aria-live="polite"></p>
+                <p class="login-register">¿Ya tienes cuenta? <a href="logIn.html">Inicia Sesión</a></p>
+            </section>
+            <section id="d3registre" aria-label="Vista 3D de GlobEat">
+                <div id="register-3d-canvas"></div>
+            </section>
         </div>
-        
     </body>
 </html>

@@ -11,15 +11,28 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
     align-items: center;
     background-color: #D7C2AE;
+    padding: 40px 32px;
+    gap: 16px;
 }
 #d3registre {
     width: 70%;
     height: 100%;
     border: none;
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
+}
+#register-3d-canvas {
+    width: 80%;
+    height: 70%;
+    background-color: #f5ede4;
+}
+.terms-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-top: 4px;
 }
