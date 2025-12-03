@@ -162,12 +162,170 @@ body {
     height: 220px;
 }
 
-.menu-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.75rem;
+/* Efectos de luz sutiles para botones y enlaces interactivos */
+.main-nav a {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+}
+
+.main-nav a:hover::before {
+    width: 80%;
+    height: 80%;
+}
+
+.main-nav a:hover {
+    transform: translateY(-1px);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.brand {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.brand::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+}
+
+.brand:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.brand:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Efectos de luz sutiles para las tarjetas de menú */
+.menu-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.05) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.8s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-card:hover::before {
+    top: -150%;
+    left: -150%;
+    opacity: 1;
+}
+
+.menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Efectos de luz sutiles para las tarjetas de producto */
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.03) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.8s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.product-card:hover::before {
+    top: -150%;
+    left: -150%;
+    opacity: 1;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Efectos de luz sutiles para enlaces del footer */
+.footer-grid a {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.footer-grid a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+}
+
+.footer-grid a:hover::before {
+    width: 60%;
+    height: 60%;
+}
+
+.footer-grid a:hover {
+    transform: translateY(-1px);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-card p {
