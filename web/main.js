@@ -40,21 +40,41 @@ function init() {
 
 // Configurar luces
 function addLights() {
-    // Luz ambiental
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+    // Luz ambiental - aumentada para más brillo general
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
     scene.add(ambientLight);
 
-    // Luz direccional
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1.1);
+    // Luz direccional principal - más intensa
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1.8);
     directionalLight.position.set(6, 8, 4);
     directionalLight.castShadow = true;
     directionalLight.shadow.mapSize.width = 2048;
     directionalLight.shadow.mapSize.height = 2048;
     scene.add(directionalLight);
 
-    const fillLight = new THREE.DirectionalLight(0xffffff, 0.6);
+    // Luz de relleno - aumentada
+    const fillLight = new THREE.DirectionalLight(0xffffff, 1.0);
     fillLight.position.set(-5, 4, 6);
     scene.add(fillLight);
+
+    // Luz adicional desde arriba para iluminar todas las caras
+    const topLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    topLight.position.set(0, 10, 0);
+    scene.add(topLight);
+
+    // Luz desde abajo para eliminar sombras muy oscuras
+    const bottomLight = new THREE.DirectionalLight(0xffffff, 0.4);
+    bottomLight.position.set(0, -5, 0);
+    scene.add(bottomLight);
+
+    // Luz puntual para añadir brillo desde los lados
+    const pointLight1 = new THREE.PointLight(0xffffff, 0.6, 10);
+    pointLight1.position.set(8, 0, 0);
+    scene.add(pointLight1);
+
+    const pointLight2 = new THREE.PointLight(0xffffff, 0.6, 10);
+    pointLight2.position.set(-8, 0, 0);
+    scene.add(pointLight2);
 }
 
 // Cargar modelo GLB
@@ -82,9 +102,9 @@ function loadLogoModel() {
             box.getCenter(center);
 
             logoModel.position.sub(center); // centrar en el origen
-            const targetScale = 5 / Math.max(size.x, size.y, size.z);
+            const targetScale = 6 / Math.max(size.x, size.y, size.z);
             logoModel.scale.setScalar(targetScale);
-            logoModel.position.y = -2.5;
+            logoModel.position.y = -4.0;
             logoGroup = new THREE.Group();
             logoGroup.add(logoModel);
             logoGroup.position.set(0, -2.5, 0);

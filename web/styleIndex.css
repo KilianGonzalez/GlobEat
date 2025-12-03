@@ -124,7 +124,7 @@
     letter-spacing: 0.08em;
     background: linear-gradient(135deg, var(--color-terracotta), #e08a5a);
     color: #fff;
-    padding: 16px 40px;
+    padding: 12px 40px;
     font-weight: 600;
     font-family: var(--font-heading);
     font-size: 0.95rem;
@@ -133,6 +133,7 @@
     box-shadow: 0 10px 24px rgba(200, 117, 69, 0.35);
     transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
     overflow: hidden;
+    justify-self: start;
 }
 
 .cta-button:hover {
