@@ -104,7 +104,7 @@ function loadLogoModel() {
             logoModel.position.sub(center); // centrar en el origen
             const targetScale = 6 / Math.max(size.x, size.y, size.z);
             logoModel.scale.setScalar(targetScale);
-            logoModel.position.y = -4.0;
+            logoModel.position.y = 0.0;
             logoGroup = new THREE.Group();
             logoGroup.add(logoModel);
             logoGroup.position.set(0, -2.5, 0);
