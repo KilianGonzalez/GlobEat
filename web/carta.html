@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylecarta.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+    <script src="carta-3d-controller.js"></script>
 </head>
 
 <body>
@@ -38,18 +39,18 @@
         <section class="experience" data-theme="american">
             <div class="experience-shell">
                 <div class="section-heading">
-                    <img class="section-icon" src="images/iconoPancake.png" alt="Icono americano" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🥞</span>
                     <h2>Experiencia Americana</h2>
-                    <img class="section-icon" src="images/iconoPancake.png" alt="Icono americano" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🥞</span>
                 </div>
                 <div class="menu-band">
                     <div class="menu-cards">
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/smoothie.glb" alt="Bebida americana" camera-controls
-                                    disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/menu1America.glb" alt="Bebida americana" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu1</h3>
+                            <h3>menú1</h3>
                             <p>Huevos + tortitas + bacon + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -58,10 +59,10 @@
                         </article>
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/tostada.glb" alt="Bagel gourmet" camera-controls disable-zoom
-                                    interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/menu2America.glb" alt="Bagel gourmet" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu2</h3>
+                            <h3>menú2</h3>
                             <p>Huevos + salchichas + bacon + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -70,10 +71,10 @@
                         </article>
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/huevofrito.glb" alt="Huevos benedictinos" camera-controls
-                                    disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/menu3America.glb" alt="Huevos benedictinos" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu3</h3>
+                            <h3>menú3</h3>
                             <p>Tortitas + fruta + smoothie/zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -88,18 +89,18 @@
         <section class="experience" data-theme="spanish">
             <div class="experience-shell">
                 <div class="section-heading">
-                    <img class="section-icon" src="images/iconoOliva.png" alt="Icono español" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🫒</span>
                     <h2>Experiencia Española</h2>
-                    <img class="section-icon" src="images/iconoOliva.png" alt="Icono español" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🫒</span>
                 </div>
                 <div class="menu-band">
                     <div class="menu-cards">
                         <article class="menu-card">
                             <div class="model-frame">
                                 <model-viewer src="../blender/basoZumo.glb" alt="Gazpacho andaluz" camera-controls
-                                    disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu1</h3>
+                            <h3>menú1</h3>
                             <p>Churros/porras + chocolate + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -109,9 +110,9 @@
                         <article class="menu-card">
                             <div class="model-frame">
                                 <model-viewer src="../blender/plato.glb" alt="Paella de mariscos" camera-controls
-                                    disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu2</h3>
+                            <h3>menú2</h3>
                             <p>Pa amb tomàquet + jamon iberico + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -120,10 +121,10 @@
                         </article>
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/salchicha.glb" alt="Rabo de toro" camera-controls disable-zoom
-                                    interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/salchicha.glb" alt="Rabo de toro" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu3</h3>
+                            <h3>menú3</h3>
                             <p>Pa amb tomàquet + tortilla de patata + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -138,18 +139,18 @@
         <section class="experience" data-theme="french">
             <div class="experience-shell">
                 <div class="section-heading">
-                    <img class="section-icon" src="images/iconoEiffel.png" alt="Icono francés" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🥐</span>
                     <h2>Experiencia Francesa</h2>
-                    <img class="section-icon" src="images/iconoEiffel.png" alt="Icono francés" aria-hidden="true">
+                    <span class="section-icon" aria-hidden="true">🥐</span>
                 </div>
                 <div class="menu-band">
                     <div class="menu-cards">
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/crepe.glb" alt="Soufflé francés" camera-controls disable-zoom
-                                    interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/menu1Francia.glb" alt="Soufflé francés" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu1</h3>
+                            <h3>menú1</h3>
                             <p>Tostada francesa + fruta + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -158,10 +159,10 @@
                         </article>
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/cruassan.glb" alt="Magret de canard" camera-controls
-                                    disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/Manu2Francia.glb" alt="Magret de canard" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu2</h3>
+                            <h3>menú2</h3>
                             <p>Cruasán + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -170,10 +171,10 @@
                         </article>
                         <article class="menu-card">
                             <div class="model-frame">
-                                <model-viewer src="../blender/tazaCafe.glb" alt="Tarte tatin" camera-controls disable-zoom
-                                    interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                                <model-viewer src="../blender/Manu3Francia.glb" alt="Tarte tatin" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
                             </div>
-                            <h3>menu3</h3>
+                            <h3>menú3</h3>
                             <p>Crepe dulce + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
@@ -191,23 +192,23 @@
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
                         <model-viewer src="../blender/tazaChocolate.glb" alt="Producto dulce" camera-controls
-                            disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
                 </article>
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/logo.glb" alt="Producto insignia" camera-controls disable-zoom
-                            interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        <model-viewer src="../blender/logo.glb" alt="Producto insignia" camera-controls
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
                 </article>
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/plato.glb" alt="Producto destacado" camera-controls disable-zoom
-                            interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        <model-viewer src="../blender/plato.glb" alt="Producto destacado" camera-controls
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
@@ -215,7 +216,7 @@
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
                         <model-viewer src="../blender/salchicha.glb" alt="Producto regional" camera-controls
-                            disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
@@ -223,15 +224,15 @@
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
                         <model-viewer src="../blender/smoothie.glb" alt="Producto refrescante" camera-controls
-                            disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
                 </article>
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/tostada.glb" alt="Producto crujiente" camera-controls disable-zoom
-                            interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        <model-viewer src="../blender/tostada.glb" alt="Producto crujiente" camera-controls
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
@@ -239,15 +240,15 @@
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
                         <model-viewer src="../blender/huevofrito.glb" alt="Producto tradicional" camera-controls
-                            disable-zoom interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>
                 </article>
                 <article class="product-card">
                     <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/basoZumo.glb" alt="Producto fresco" camera-controls disable-zoom
-                            interaction-prompt="none" shadow-intensity="1" auto-rotate></model-viewer>
+                        <model-viewer src="../blender/basoZumo.glb" alt="Producto fresco" camera-controls
+                            shadow-intensity="1" auto-rotate></model-viewer>
                     </div>
                     <h3>producto</h3>
                     <p>Sabores del mercado local.</p>

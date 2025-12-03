@@ -87,7 +87,6 @@ body {
 }
 
 .menu-page {
-    /* padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 8vw, 5rem) 4rem; */
     padding-top: 80px;
     display: flex;
     flex-direction: column;
@@ -112,16 +111,13 @@ body {
 }
 
 .section-icon {
-    width: 56px;
-    height: 56px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: inline-block;
 }
 
 .experience[data-theme="spanish"] .section-icon {
-    width: 80px;
-    height: 80px;
+    font-size: 1.5rem;
 }
 
 .menu-band {
@@ -145,7 +141,7 @@ body {
 
 .model-frame {
     width: 100%;
-    height: 180px;
+    height: 280px;
     border-radius: 20px;
     background: var(--card-bg);
     display: flex;
@@ -158,10 +154,12 @@ body {
 .model-frame model-viewer {
     width: 100%;
     height: 100%;
+    --min-camera-orbit: auto 30deg auto;
+    --max-camera-orbit: auto 150deg auto;
 }
 
 .model-frame--compact {
-    height: 140px;
+    height: 220px;
 }
 
 .menu-card h3 {
@@ -287,5 +285,186 @@ body {
 
     .menu-band {
         padding: 1.75rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .menu-page {
+        padding: 32px 20px;
+    }
+
+    .experience-shell {
+        margin-bottom: 48px;
+    }
+
+    .section-heading {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .section-icon {
+        font-size: 1rem;
+    }
+
+    .experience[data-theme="spanish"] .section-icon {
+        font-size: 1.2rem;
+    }
+
+    .menu-cards {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .menu-card {
+        padding: 1.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .model-frame {
+        height: 300px;
+    }
+
+    .model-frame--compact {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-page {
+        padding: 24px 16px;
+    }
+
+    .experience-shell {
+        margin-bottom: 40px;
+    }
+
+    .section-heading {
+        font-size: 0.95rem;
+        gap: 0.8rem;
+        flex-direction: column;
+    }
+
+    .section-icon {
+        font-size: 0.9rem;
+    }
+
+    .experience[data-theme="spanish"] .section-icon {
+        font-size: 1.1rem;
+    }
+
+    .menu-cards {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .menu-card {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .menu-meta {
+        justify-content: center;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .product-card {
+        text-align: center;
+    }
+
+    .model-frame {
+        height: 280px;
+    }
+
+    .model-frame--compact {
+        height: 220px;
+    }
+
+    .variety {
+        margin-top: 48px;
+    }
+
+    .variety h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-page {
+        padding: 20px 12px;
+    }
+
+    .experience-shell {
+        margin-bottom: 32px;
+    }
+
+    .section-heading {
+        font-size: 0.9rem;
+        gap: 0.6rem;
+    }
+
+    .section-icon {
+        font-size: 0.8rem;
+    }
+
+    .experience[data-theme="spanish"] .section-icon {
+        font-size: 1rem;
+    }
+
+    .menu-cards {
+        gap: 1rem;
+    }
+
+    .menu-card {
+        padding: 1rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .menu-card p {
+        font-size: 0.9rem;
+    }
+
+    .menu-meta {
+        font-size: 0.9rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .model-frame {
+        height: 260px;
+    }
+
+    .model-frame--compact {
+        height: 200px;
+    }
+
+    .variety h2 {
+        font-size: 1.3rem;
+        margin-bottom: 24px;
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+    }
+
+    .product-card p {
+        font-size: 0.85rem;
     }
 }

@@ -198,9 +198,58 @@ main > section {
 @media (max-width: 768px) {
     .header-inner {
         padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav--center {
+        order: 3;
+    }
+
+    .main-nav--right {
+        order: 2;
     }
 
     main {
         padding: 0 20px 80px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-inner {
+        padding: 0 16px;
+    }
+
+    .brand img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .brand span {
+        font-size: 1.2rem;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 0 16px 60px;
+    }
+
+    .footer-grid {
+        gap: 24px;
     }
 }
