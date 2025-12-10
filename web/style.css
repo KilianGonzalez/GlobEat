@@ -70,6 +70,33 @@ img {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.brand::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+}
+
+.brand:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.brand:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 
 .brand img {
@@ -99,6 +126,33 @@ img {
     position: relative;
     font-weight: 500;
     padding-bottom: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+}
+
+.main-nav a:hover::before {
+    width: 80%;
+    height: 80%;
+}
+
+.main-nav a:hover {
+    transform: translateY(-1px);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .main-nav a.is-active::after,
