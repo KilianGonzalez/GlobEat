@@ -357,21 +357,21 @@ body {
 
 /* Carrusel de productos */
 .carousel-container {
-    position: relative;
-    width: 100%;
-    padding: 0 60px;
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
 }
 
 .carousel-track {
-    overflow: visible;
-    border-radius: 16px;
+  overflow: hidden; /* antes: visible */
+  border-radius: 16px;
 }
 
 .carousel-track .product-grid {
-    display: flex;
-    gap: 1.5rem;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    width: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: max-content; /* recomendable para que el ancho sea el de todas las cards */
 }
 
 .carousel-btn {
@@ -642,7 +642,7 @@ body {
     }
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 1.5rem;
     }
 
