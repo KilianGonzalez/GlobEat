@@ -429,9 +429,22 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
+/* Override grid behavior for carousel */
 .carousel-track .product-grid {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
     grid-template-columns: none;
+    width: max-content;
+}
+
+.carousel-track .product-card {
+    flex: 0 0 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card {
