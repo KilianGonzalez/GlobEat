@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="stylecarta.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
     <script src="carta-3d-controller.js"></script>
+    <script src="product-carousel.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,8 @@
                             <p>Huevos + tortitas + bacon + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>18&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>12&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -66,7 +68,8 @@
                             <p>Huevos + salchichas + bacon + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>21&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>15&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -78,7 +81,8 @@
                             <p>Tortitas + fruta + smoothie/zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>24&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>14&nbsp;€</span>
                             </div>
                         </article>
                     </div>
@@ -104,7 +108,8 @@
                             <p>Churros + chocolate + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>14&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>15&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -116,7 +121,8 @@
                             <p>Pa amb tomàquet + jamon iberico + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>27&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>15&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -128,7 +134,8 @@
                             <p>Pa amb tomàquet + tortilla de patata + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>25&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>12&nbsp;€</span>
                             </div>
                         </article>
                     </div>
@@ -154,7 +161,8 @@
                             <p>Tostada francesa + fruta + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>19&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>10&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -166,7 +174,8 @@
                             <p>Cruasán + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>32&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>5&nbsp;€</span>
                             </div>
                         </article>
                         <article class="menu-card">
@@ -178,7 +187,8 @@
                             <p>Crepe dulce + zumo/cafe</p>
                             <div class="menu-meta">
                                 <span>Precio</span>
-                                <span>16&nbsp;€</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="menu-logo-img">
+                                <span>10&nbsp;€</span>
                             </div>
                         </article>
                     </div>
@@ -188,71 +198,99 @@
 
         <section class="variety">
             <h2>Gastronomía Variada</h2>
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/tazaChocolate.glb" alt="Producto dulce" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn--prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-track">
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/tazaChocolate.glb" alt="Producto dulce" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Taza Chocolate</h3>
+                            <p>Chocolate caliente con espuma.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>6&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/logo.glb" alt="Producto insignia" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Logo Especial</h3>
+                            <p>Diseño exclusivo GlobEat.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>8&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/plato.glb" alt="Producto destacado" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Plato Premium</h3>
+                            <p>Plato gourmet del día.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>12&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/salchicha.glb" alt="Producto regional" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Salchicha Artesanal</h3>
+                            <p>Salchicha tradicional casera.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>4&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/smoothie.glb" alt="Producto refrescante" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Smoothie Natural</h3>
+                            <p>Batido de frutas frescas.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>5&nbsp;€</span>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="model-frame model-frame--compact">
+                                <model-viewer src="../blender/tostada.glb" alt="Producto crujiente" camera-controls
+                                    shadow-intensity="1" auto-rotate></model-viewer>
+                            </div>
+                            <h3>Tostada francesa</h3>
+                            <p>Tostada con ingredientes frescos.</p>
+                            <div class="product-meta">
+                                <span>Precio</span>
+                                <img src="images/logo.png" alt="Logo GlobEat" class="product-logo-img">
+                                <span>5&nbsp;€</span>
+                            </div>
+                        </article>
                     </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/logo.glb" alt="Producto insignia" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/plato.glb" alt="Producto destacado" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/salchicha.glb" alt="Producto regional" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/smoothie.glb" alt="Producto refrescante" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/tostada.glb" alt="Producto crujiente" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/huevofrito.glb" alt="Producto tradicional" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
-                <article class="product-card">
-                    <div class="model-frame model-frame--compact">
-                        <model-viewer src="../blender/basoZumo.glb" alt="Producto fresco" camera-controls
-                            shadow-intensity="1" auto-rotate></model-viewer>
-                    </div>
-                    <h3>producto</h3>
-                    <p>Sabores del mercado local.</p>
-                </article>
+                </div>
+                <button class="carousel-btn carousel-btn--next" aria-label="Siguiente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
