@@ -9,9 +9,9 @@
     --text-main: #2f2a25;
     --muted: #7a6d63;
     --header: #d8c7b7;
-    --accent-american: #e6b274;/*#d6762c;*/
-    --accent-spanish: #a7be7c/* #748766*/;
-    --accent-french: #d4ad8a/* #b19278*/;
+    --accent-american: rgba(214, 118, 44, 0.2);
+    --accent-spanish: rgba(116, 135, 102, 0.2);
+    --accent-french: rgba(177, 146, 120, 0.2);
     --card-bg: #f9f3ed;
     --product-border: #ddcbb6;
     --color-sand: #f3e6d7;
